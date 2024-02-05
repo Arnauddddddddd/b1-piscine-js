@@ -8,7 +8,7 @@ is.str = function(v) {
     return typeof(v) === 'string';
 }
 is.bool = function(v) {
-    return typeof(v) == Boolean;
+    return typeof(v) === 'boolean';
 }
 is.undef = function(v) {
     return typeof(v) == undefined;
