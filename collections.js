@@ -11,7 +11,7 @@ function setToArr(set) {
 }
 
 function setToStr(set) {
-    word = "";
+    var word = "";
     for (i = 0; i < set.size; i++) {
         word += set[i];
     }
