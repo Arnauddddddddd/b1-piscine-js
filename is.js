@@ -2,7 +2,7 @@ is.num = function(v) {
     return typeof(v) === 'number';
 }
 is.nan = function(v) {
-    return typeof(v) === Number.isNaN(v);
+    return Number.isNaN(v);
 }
 is.str = function(v) {
     return typeof(v) == String;
