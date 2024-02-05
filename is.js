@@ -11,10 +11,10 @@ is.bool = function(v) {
     return typeof(v) === 'boolean';
 }
 is.undef = function(v) {
-    return typeof(v) == undefined;
+    return typeof(v) === 'undefined';
 }
 is.def = function(v) {
-    return typeof(v) != undefined;
+    return typeof(v) !== 'undefined';
 }
 is.arr = function(v) {
     return typeof(v) == Array;
