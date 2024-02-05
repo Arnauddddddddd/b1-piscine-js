@@ -11,7 +11,7 @@ function setToArr(set) {
 }
 
 function setToStr(set) {
-    var word = "";
+    let word = "";
     set.forEach((value) => {
         word += value;
     });
