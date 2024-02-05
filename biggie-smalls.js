@@ -1,3 +1,2 @@
 var smalls = Number.MIN_VALUE;
-var biggie = 1.7976931348623157e+308
-;
+var biggie = Number.MAX_VALUE * Number.MAX_VALUE;
