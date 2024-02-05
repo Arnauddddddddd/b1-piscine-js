@@ -5,7 +5,7 @@ is.str = function(v) {
     return typeof(v) == String;
 }
 is.nan = function(v) {
-    return isNaN(v);
+    return typeof(v) != Number;
 }
 is.bool = function(v) {
     return typeof(v) == Boolean;
