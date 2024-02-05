@@ -17,7 +17,7 @@ is.def = function(v) {
     return typeof(v) !== 'undefined';
 }
 is.arr = function(v) {
-    return typeof(v) === 'array';
+    return Array.isArray(v);
 }
 is.obj = function(v) {
     return typeof(v) === 'object';
