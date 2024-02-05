@@ -17,13 +17,13 @@ is.def = function(v) {
     return typeof(v) !== 'undefined';
 }
 is.arr = function(v) {
-    return typeof(v) == Array;
+    return typeof(v) === 'array';
 }
 is.obj = function(v) {
-    return typeof(v) == Object;
+    return typeof(v) === 'object';
 }
 is.fun = function(v) {
-    return typeof(v) == Function;
+    return typeof(v) === 'function';
 }
 is.truthy = function(v) {
     return v == true;
