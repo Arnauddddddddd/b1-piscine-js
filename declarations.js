@@ -12,7 +12,8 @@ const Object2 = {
     bool: true,
 }
 const obj = Object.freeze(Object1);
+const obj2 = Object.freeze(Object2);
 const nested = {
     arr: [4, undefined, '2'],
-    obj: Object.freeze(Object2),
+    obj: obj2,
 };
