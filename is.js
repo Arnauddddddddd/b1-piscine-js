@@ -1,11 +1,11 @@
 is.num = function(v) {
-    return typeof(v) == Number;
+    return typeof(v) === 'number';
 }
 is.str = function(v) {
     return typeof(v) == String;
 }
 is.nan = function(v) {
-    return typeof(v) != Number;
+    return typeof(v) ==! 'number';
 }
 is.bool = function(v) {
     return typeof(v) == Boolean;
@@ -31,4 +31,3 @@ is.truthy = function(v) {
 is.falsy = function(v) {
     return v == false;
 }
-
