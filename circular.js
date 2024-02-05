@@ -1,0 +1,3 @@
+circular = {
+    obj: this,
+}
