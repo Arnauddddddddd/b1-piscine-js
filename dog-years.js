@@ -1,6 +1,6 @@
 function dogYears(planet, age) {
     if (planet == "earth") {
-        return parseFloat((7 * (age / 31557600)).toFixed(2).parseInt());
+        return parseFloat((7 * (age / 31557600)).toFixed(2));
     }
     if (planet == "mercury") {
         return parseFloat((7 * (age / 0.2408467 * 31557600)).toFixed(2));
