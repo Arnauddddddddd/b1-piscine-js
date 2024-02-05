@@ -1,12 +1,5 @@
-const person = {
-    name: 'Rick',
-    age: 77,
-    country: 'US',
-  }
-const clone1 = new Object(person);
-const clone2 = new Object(person);
-var samePerson = Object.assign({}, person);
-Object.freeze(clone1);
-Object.freeze(clone2);
+const clone1 = person;
+const clone2 = person;
+samePerson = Object.assign({}, person);
 person[age] += 1;
 person[country] = 'FR';
