@@ -5,7 +5,7 @@ const person = {
   }
 const clone1 = new Object(person);
 const clone2 = new Object(person);
-let samePerson = Object.assign({}, person);
+var samePerson = Object.assign({}, person);
 Object.freeze(clone1);
 Object.freeze(clone2);
 person[age] += 1;
