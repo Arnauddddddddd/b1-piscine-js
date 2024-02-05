@@ -12,7 +12,7 @@ function setToArr(set) {
 
 function setToStr(set) {
     var word = "";
-    for (i = 0; i < set.size; i++) {
+    for (var i = 0; i < set.size; i++) {
         word += set[i];
     }
     return word;
