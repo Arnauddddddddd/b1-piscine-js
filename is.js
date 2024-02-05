@@ -20,7 +20,7 @@ is.arr = function(v) {
     return Array.isArray(v);
 }
 is.obj = function(v) {
-    return typeof(v) === typeof new Object;
+    return typeof{}(v);
 }
 is.fun = function(v) {
     return typeof{}(v);
