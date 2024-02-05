@@ -26,8 +26,8 @@ is.fun = function(v) {
     return typeof(v) === "function";
 }
 is.truthy = function(v) {
-    return v == true;
+    return v == !!v;
 }
 is.falsy = function(v) {
-    return v == false;
+    return v == !v;
 }
