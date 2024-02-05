@@ -1,3 +1,3 @@
 circular = {
-    obj: this,
+    circular: this,
 }
