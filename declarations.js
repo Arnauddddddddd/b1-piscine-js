@@ -1,4 +1,4 @@
-const escapeStr = "`, \, /, '"
+const escapeStr = "'" + "\/" + '"'
 const arr = [4, '2'];
 const Object1 = {
     str: "",
@@ -12,8 +12,8 @@ const Object2 = {
     bool: true,
     undef: undefined,
 }
-const obj = create.Object(Object1);
+const obj = new Object(Object1);
 const nested = {
     arr: [4, undefined, '2'],
-    obj: create.Object(Object2),
+    obj: new Object(Object2),
 };
