@@ -10,7 +10,6 @@ const Object2 = {
     str: "",
     num: 0,
     bool: true,
-    undef: undefined,
 }
 const obj = new Object(Object1);
 const nested = {
