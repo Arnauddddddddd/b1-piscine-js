@@ -20,10 +20,10 @@ is.arr = function(v) {
     return Array.isArray(v);
 }
 is.obj = function(v) {
-    return typeof(v) === "object";
+    return typeof(v) === "object" && v !== null;
 }
 is.fun = function(v) {
-    return (typeof(v) === "function" && v !== null);
+    return (typeof(v) === "function");
 }
 is.truthy = function(v) {
     return v == true;
