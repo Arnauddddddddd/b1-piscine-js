@@ -3,6 +3,9 @@ function isPositive(value) {
 }
 
 function abs(value) {
+    if (value == 0) {
+        return -0;
+    }
     if (isPositive(value)) {
         return value;
     }
