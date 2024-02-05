@@ -1,2 +1,2 @@
-var smalls = Number.MIN_VALUE * Number.MIN_VALUE;
-var biggie = Number.MAX_VALUE * Number.MAX_VALUE;
+var smalls = Number.MIN_SAFE_INTEGER;
+var biggie = Number.MAX_SAFE_INTEGER;
