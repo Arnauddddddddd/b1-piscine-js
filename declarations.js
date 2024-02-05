@@ -1,12 +1,12 @@
-const escapeStr = "'" + "\\ / " + '"' + "`";
+const escapeStr = "'" + "\\/" + '"' + "`";
 const arr = [4, '2'];
-const Object1 = {
+var Object1 = {
     str: "",
     num: 0,
     bool: true,
     undef: undefined,
 }
-const Object2 = {
+var Object2 = {
     str: "",
     num: 0,
     bool: true,
