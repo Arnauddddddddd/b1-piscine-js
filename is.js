@@ -23,7 +23,7 @@ is.obj = function(v) {
     return typeof(v) === "object";
 }
 is.fun = function(v) {
-    return typeof(v) === "function";
+    return (typeof(v) === "function" && v !== null);
 }
 is.truthy = function(v) {
     return v == true;
