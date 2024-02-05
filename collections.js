@@ -12,10 +12,10 @@ function setToArr(set) {
 
 function setToStr(set) {
     var word = "";
-    for (var i = 0; i < set.size; i++) {
-        word += set[i];
-    }
-    return word;
+    set.forEach((value) => {
+        word += value;
+    });
+    return res;
 }
 
 function strToArr(str) {
