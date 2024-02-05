@@ -6,10 +6,10 @@ function dogYears(planet, age) {
         return parseFloat((7 * (age / (0.2408467 * 31557600))).toFixed(2));
     }
     if (planet == "venus") {
-        return parseFloat((7 * (age / 0.61519726 * 31557600)).toFixed(2));
+        return parseFloat((7 * (age / (0.61519726 * 31557600))).toFixed(2));
     }
     if (planet == "mars") {
-        return parseFloat((7 * (age / 1.8808158 * 31557600)).toFixed(2));
+        return parseFloat((7 * (age / (1.8808158 * 31557600))).toFixed(2));
     }
     if (planet == "jupiter") {
         return parseFloat((7 * (age / 11.862615 * 31557600)).toFixed(2));
