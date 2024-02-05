@@ -3,5 +3,5 @@ function multiply(a, b) {
     for (let i = 0; i < b; i++) {
         result += a;
     } 
-    return result
+    return result;
 }
