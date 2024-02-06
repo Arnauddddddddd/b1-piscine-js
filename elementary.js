@@ -1,3 +1,18 @@
+function negative(a, b, neg) {
+    if (a < 0) {
+        neg = true;
+    }
+    if (b < 0) {
+        if (neg) {
+            neg = false;
+        } else {
+            neg = true;
+        }
+    }
+    return neg;
+}
+
+
 function multiply(a, b) {
     var result = 0;
     var neg = false;
@@ -22,7 +37,7 @@ function divide(a, b) {
     neg = negative(a, b, neg);
     a = Math.abs(a);
     b = Math.abs(b);
-    for (let i = 0; i < b; i++) {
+    for (let i = 0; i < a; i++) {
         if (multiply(i, b) == a) {
             if (neg) {
                 i = -i;
@@ -37,24 +52,14 @@ function divide(a, b) {
             return i;
         }
     }
-   
 }
 
-
-
-function negative(a, b, neg) {
-    if (a < 0) {
-        neg = true;
+function modulo(a, b) {
+    if (multiply(divide(a, b), b) == a) {
+        return 0;
     }
-    if (b < 0) {
-        if (neg) {
-            neg = false;
-        } else {
-            neg = true;
-        }
-    }
-    return neg;
+    return 1 + modulo(a+1, b);
 }
 
-console.log(divide(123, -22));
-console.log(multiply(123, -22));
+console.log(modulo(123, -22));
+console.log(modulo(16, 4));
