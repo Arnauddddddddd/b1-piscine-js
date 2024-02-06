@@ -9,7 +9,7 @@ function indexOf(arr, value, index = 0) {
 
 function lastIndexOf(arr, value, index = 0) {
     var resultat = -1;
-    for (var i = index; i < arr.length; i++) {
+    for (var i = 0; i < arr.length - index; i++) {
         if (arr[i] == value) {
             resultat = i;
         }
