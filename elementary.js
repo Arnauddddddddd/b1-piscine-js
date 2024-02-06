@@ -55,11 +55,21 @@ function divide(a, b) {
 }
 
 function modulo(a, b) {
+    var neg = false;
+    neg = negative(a, b, neg);
+    a = Math.abs(a);
+    b = Math.abs(b);
     if (multiply(divide(a, b), b) == a) {
         return 0;
     }
     if (divide(a, b) == 0) {
         return a
     }
+    if (neg) {
+        return -1 - modulo(a-1, b);
+    }
     return 1 + modulo(a-1, b);
 }
+
+
+
