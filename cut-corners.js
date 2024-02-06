@@ -46,7 +46,7 @@ function floor(value) {
 
 function trunc(value) {
     if (value < 0) {
-        return -1 + -trunc(-value);
+        return -trunc(-value);
     }
     if (Number.isInteger(value)) {
         return value;
