@@ -7,7 +7,7 @@ function indexOf(arr, value, index = 0) {
     return -1;
 }
 function lastIndexOf(arr, value, index) {
-    return indexOf(arr.reverse(), value);
+    return arr.length - indexOf(arr.reverse(), value);
 }
 function includes(arr, value, index) {
     return indexOf(arr, value) != -1;
