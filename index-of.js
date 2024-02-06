@@ -9,7 +9,7 @@ function indexOf(arr, value, index = 0) {
 
 function lastIndexOf(arr, value, index = 0) {
     var resultat = -1;
-    for (var i = index; i < arr.length; i++) {
+    for (var i = 0; i < arr.length - index; i++) {
         if (arr[i] == value) {
             resultat = i;
         }
@@ -22,4 +22,6 @@ function includes(arr, value, index) {
     return indexOf(arr, value, index) != -1;
 }
 
+
+console.log(lastIndexOf([3, 0, 0, 3], 3, 2))
 
