@@ -1,16 +1,19 @@
 function indexOf(arr, value, index = 0) {
-    for (let i = index; i < arr.length; i++) {
+    for (var i = index; i < arr.length; i++) {
         if (arr[i] == value) {
             return i;
         }
     }
     return -1;
 }
-function lastIndexOf(arr, value, index) {
-    return indexOf(arr.reverse(), value, index);
+function lastIndexOf(arr, value, index = 0) {
+    for (var i = arr.length-1 - index; i >= 0; i--) {
+        if (arr[i] == value) {
+            return i;
+        }
+    }
+    return -1;
 }
 function includes(arr, value, index) {
     return indexOf(arr, value, index) != -1;
 }
-
-console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
