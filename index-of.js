@@ -8,13 +8,12 @@ function indexOf(arr, value, index = 0) {
 }
 
 function lastIndexOf(arr, value, index = 0) {
-    var resultat = -1;
-    for (var i = index; i < arr.length; i++) {
+    for (var i = index || arr.length - 1; i >= 0; i--) {
         if (arr[i] == value) {
-            resultat = i;
+            return i;
         }
     }
-    return resultat;
+    return -1;
 }
 
 
