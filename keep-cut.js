@@ -22,10 +22,10 @@ function cutFirstLast(str) {
     return cutFirst(cutLast(str)); 
 }
 function keepFirst(str) {
-    return str[0] + str[2];
+    return str[0] + str[1];
 }
 function keepLast(str) {
-    return str[str.length - 1] + str[str.length - 1];
+    return str[str.length - 2] + str[str.length - 1];
 }
 function keepFirstLast(str) {
     return keepFirst(keepLast(str));
