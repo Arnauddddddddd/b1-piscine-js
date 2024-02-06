@@ -45,6 +45,10 @@ function floor(value) {
 
 
 function trunc(value) {
+    if (value > 0xfffffffff) {
+        value -= 0xfffffffff;
+        return 0xfffffffff + trunc(0xfffffffff);
+    }
     if (value < 0) {
         return -trunc(-value);
     }
