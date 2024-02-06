@@ -10,7 +10,7 @@ function lastIndexOf(arr, value, index = 0) {
     if (index != 0) {
         index = -index
     }
-    for (var i = arr.length-1 - index; i >= 0; i--) {
+    for (var i = arr.length - index; i >= 0; i--) {
         if (arr[i] == value) {
             return i;
         }
