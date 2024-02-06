@@ -42,7 +42,10 @@ function divide(a, b) {
     { 
        a = a - b; 
        result++ ; 
-    } 
+    }
+    if (neg) {
+        result = -result;
+    }
     return result;
 }
 
