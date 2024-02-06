@@ -55,13 +55,20 @@ function divide(a, b) {
 }
 
 function modulo(a, b) {
+    sign = false;
+    if (a < 0) {
+        sign = true;
+    }
     if (multiply(divide(a, b), b) == a) {
         return 0;
     }
     if (divide(a, b) == 0) {
         return a
     }
-    return Math.abs(1 + modulo(a-1, b));
+    if (sign) {
+        return -1 + modulo(a+1, b);
+    }
+    return 1 + modulo(a-1, b);
 }
 
 
@@ -69,6 +76,9 @@ console.log(modulo(34, 78));
 console.log(modulo(16, 4));
 console.log(modulo(78, 34));
 console.log(modulo(123, 22));
+console.log(modulo(-123, 22));
+console.log(modulo(123, -22));
+
 
 /*
 function modulo(a, b) {
