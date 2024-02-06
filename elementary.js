@@ -58,8 +58,11 @@ function modulo(a, b) {
     if (multiply(divide(a, b), b) == a) {
         return 0;
     }
+    if (divide(a, b) == 0) {
+        return a
+    }
     return 1 + modulo(a+1, b);
 }
 
-console.log(modulo(123, -22));
+console.log(modulo(34, 78));
 console.log(modulo(16, 4));
