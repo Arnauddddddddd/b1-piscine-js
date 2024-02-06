@@ -26,12 +26,12 @@ function divide(a, b) {
     if ((a == 0) || (b == 0)) {
         return null;
     }
-    for (let i = a; i < b; i++) {
-        if (multiply(a, i) == b) {
+    for (let i = b; i < a; i++) {
+        if (multiply(b, i) == a) {
             return i;
         }
     }
     return result;
 }
 
-console.log(divide(4, 20));
+console.log(divide(20, 4));
