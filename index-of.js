@@ -7,8 +7,10 @@ function indexOf(arr, value, index = 0) {
     return -1;
 }
 function lastIndexOf(arr, value, index) {
-    return arr.length - indexOf(arr.reverse(), value);
+    return arr.length - indexOf(arr.reverse(), value) +1;
 }
 function includes(arr, value, index) {
     return indexOf(arr, value) != -1;
 }
+
+console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
