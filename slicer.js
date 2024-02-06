@@ -1,4 +1,5 @@
 function slice(arr, index, end = null) {
+    var result = [];
     if (end == null) {
         end = arr.length;
     }
@@ -8,12 +9,17 @@ function slice(arr, index, end = null) {
     if (index < 0) {
         index = arr.length + index;
     }
-    if (index < end) {
-        return arr[index] + slice(arr, index+1, end);
+    for (var i = index; i < end; i++ ) {
+        result.push(arr[i])
     }
-    return "";
+    if (typeof arr === 'string') {
+        return result.join("");
+    }
+    return result;
 }
 
 console.log(slice('abcdef', 0, 2))
 console.log(slice('abcdef', 2))
 console.log(slice('abcdef', 0, -2))
+
+console.log(slice([1, 2, 3, 4, 5, 6], 2))
