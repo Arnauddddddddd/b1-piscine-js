@@ -30,10 +30,11 @@ function divide(a, b) {
             return i;
         }
         if (multiply(i, b) > a) {
+            i--
             if (neg) {
-                i = -i+1;
+                i = -i;
             }
-            return i-1;
+            return i;
         }
     }
    
@@ -55,5 +56,5 @@ function negative(a, b, neg) {
     return neg;
 }
 
-console.log(divide(78, 34));
+console.log(divide(123, -22));
 console.log(multiply(123, -22));
