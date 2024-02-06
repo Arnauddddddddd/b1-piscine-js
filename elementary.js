@@ -61,8 +61,5 @@ function modulo(a, b) {
     if (divide(a, b) == 0) {
         return a
     }
-    return 1 + modulo(a+1, b);
+    return 1 + modulo(a-1, b);
 }
-
-console.log(modulo(34, 78));
-console.log(modulo(16, 4));
