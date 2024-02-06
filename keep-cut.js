@@ -37,5 +37,5 @@ function keepFirstLast(str) {
     if (str.length < 4) {
         return str;
     }
-    return keepFirst(keepLast(str));
+    return keepFirst(str) + keepLast(str);
 }
