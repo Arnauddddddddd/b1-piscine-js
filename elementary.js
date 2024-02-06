@@ -27,7 +27,7 @@ function divide(a, b) {
         return null;
     }
     for (let i = a; i < b; i++) {
-        if (a * i == b) {
+        if (multiply(a, i) == b) {
             return i;
         }
     }
