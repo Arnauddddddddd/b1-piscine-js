@@ -55,6 +55,23 @@ function divide(a, b) {
 }
 
 function modulo(a, b) {
+    if (multiply(divide(a, b), b) == a) {
+        return 0;
+    }
+    if (divide(a, b) == 0) {
+        return a
+    }
+    return Math.abs(1 + modulo(a-1, b));
+}
+
+
+console.log(modulo(34, 78));
+console.log(modulo(16, 4));
+console.log(modulo(78, 34));
+console.log(modulo(123, 22));
+
+/*
+function modulo(a, b) {
     var neg = false;
     neg = negative(a, b, neg);
     a = Math.abs(a);
@@ -66,10 +83,10 @@ function modulo(a, b) {
         return a
     }
     if (neg) {
-        return -1 - modulo(a-1, b);
+        return 1 + modulo(a-1, b);
     }
     return 1 + modulo(a-1, b);
 }
-
+*/
 
 
