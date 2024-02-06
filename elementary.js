@@ -1,7 +1,9 @@
 function multiply(a, b) {
     var result = 0;
     var neg = false;
-    a, b, neg = negative(a, b, neg);
+    neg = negative(a, b, neg);
+    a = Math.abs(a);
+    b = Math.abs(b);
     for (let i = 0; i < b; i++) {
         result += a;
     } 
@@ -11,27 +13,15 @@ function multiply(a, b) {
     return result;
 }
 
-function negative(a, b, neg) {
-    if (a < 0) {
-        a = -a;
-        neg = true;
-    }
-    if (b < 0 && neg) {
-        b = -b;
-        neg = false;
-    } else if (b < 0) {
-        neg = true;
-        b = -b;
-    }
-    return a, b, neg
-}
 
 function divide(a, b) {
     var neg = false;
     if ((a == 0) || (b == 0)) {
         return null;
     }
-    a, b, neg = negative(a, b, neg);
+    neg = negative(a, b, neg);
+    a = Math.abs(a);
+    b = Math.abs(b);
     for (let i = 0; i < b; i++) {
         if (multiply(i, b) == a) {
             if (neg) {
@@ -49,4 +39,21 @@ function divide(a, b) {
    
 }
 
+
+
+function negative(a, b, neg) {
+    if (a < 0) {
+        neg = true;
+    }
+    if (b < 0) {
+        if (neg) {
+            neg = false;
+        } else {
+            neg = true;
+        }
+    }
+    return neg;
+}
+
 console.log(divide(78, 34));
+console.log(multiply(123, -22));
