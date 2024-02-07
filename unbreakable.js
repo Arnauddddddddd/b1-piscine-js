@@ -14,6 +14,9 @@ function split(str, x) {
             console.log(txt)
             arr.push(txt.slice(i-1, i-1+x.length));
         }
+        if (i == str.length-1) {
+            arr.push(txt.slice(i));
+        }
     }
     return arr;
 }
