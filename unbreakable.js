@@ -1,24 +1,63 @@
-function split(str, x) {
+function split(str, spl = "") {
     var arr = [];
-    var add = 0;
-    var txt = "";
-    for (var i = 0; i < str.length; i++) {
-        add = 0;
-        txt += str[i];
-        for (var j = 0; j < x.length; j++) {
-            if (str[i] == x[j]) {
-                add++;
+    var numberSplit = 0;
+    var actual = "";
+    var lastFound = -2;
+    var add = 1;
+    for (let i = 0; i < str.length; i++) {
+        actual = "";
+        for (let k = 0; k < spl.length; k++) {
+            actual += str[i + k]
+        }
+        if (actual == spl) {
+            numberSplit++;
+            if (lastFound + 1 == i) {
+                add = 0;
             }
+            lastFound = i;
         }
-        if (add == x.length) {
-            console.log(txt)
-            arr.push(txt.slice(i-1, i-1+x.length));
-        }
-        if (i == str.length-1) {
-            arr.push(txt.slice(i));
+
+    }
+    var nosplit = false;
+    if (spl == "") {
+        numberSplit = str.length;
+        nosplit = true;
+    }
+    var j = 0;
+    for (let i = 0; i < numberSplit+add; i++) {
+        var toAdd = "";
+        if (nosplit) {
+            arr.push(str[j]);
+            j++;
+        } else {
+            actual = "";
+            while (actual != spl && j <= str.length-1) {
+                for (let k = 0; k < spl.length; k++) {
+                    actual += str[j + k];
+                }
+                if (actual != spl) {
+                    actual = "";
+                    toAdd += str[j];
+                    j++;
+                }
+            }
+            for (let k = 0; k < spl.length; k++) {
+                j++;
+            }
+            arr.push(toAdd);
         }
     }
     return arr;
 }
 
-console.log(split('a b c', ' '))
+function join(arr, spl = "") {
+    var res = "";
+    for (let i = 0; i < arr.length; i++) {
+        if (i != arr.length-1) {
+            res += arr[i] + spl
+        } else {
+            res += arr[i]
+        }
+    }
+    return res;
+}
