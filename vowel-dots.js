@@ -1,11 +1,11 @@
 function vowelDots(str) {
-    var txt = "";
+    var vowels = "";
     var voyelles = "aeiouAEIOU";
     for (var i = 0; i < str.length; i++) {
-        txt += str[i];
+        vowels += str[i];
         if (str[i] in voyelles) {
-            txt += "."
+            vowels += "."
         }
     }
-    return txt;
+    return vowels;
 }
