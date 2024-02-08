@@ -10,7 +10,7 @@ function letterSpaceNumber(str) {
             if ((letter > "a" && letter < "z") || (letter > "A" && letter < "Z")) {
                 if (arrStr[i].length != 1) {
                     if (!(arrStr[i][1] <= '9' && arrStr[i][1] >= '0')) {
-                        car = letter[letter.length-1] + " " + arrStr[i][arrStr[i].length-1]
+                        car = letter[letter.length-1] + " " + arrStr[i][0]
                         arr.push(car);
                         car = "";
                     }
