@@ -1,4 +1,4 @@
-function RNA(str) {
+function DNA(str) {
     var txt = "";
     for (var i=0; i < str.length; i++) {
         if (str[i] == "C") {
@@ -15,7 +15,7 @@ function RNA(str) {
 
 }
 
-function DNA(str) {
+function RNA(str) {
     var txt = "";
     for (var i=0; i < str.length; i++) {
         if (str[i] == "G") {
