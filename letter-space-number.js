@@ -2,7 +2,7 @@ function letterSpaceNumber(str) {
     var arrStr = str.split(" ");
     var arr = [];
     var letter = "";
-    car = "";
+    var car = "";
     for (var i = 0; i < arrStr.length; i++) {
         if ((arrStr[i] <= '9' && arrStr[i] >= '0') && arrStr[i].length == 1) {
             letter = arrStr[i-1];
