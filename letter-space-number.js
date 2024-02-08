@@ -1,13 +1,16 @@
 function letterSpaceNumber(str) {
-    str.split();
+    arrStr = str.split(" ");
+    console.log(arrStr)
     var arr = [];
     var letter = "";
     car = "";
     for (var i = 0; i < str.length; i++) {
-        if ((str[i][0] < "9" && str[i][0] > "0") && (str[i][1] > "9" && str[i][1] < "0")) {
-            letter = str[i-1][-1]
+        console.log(arrStr[i])
+        if ((arrStr[i] <= '9' && arrStr[i] >= '0') && arrStr[i].length == 1) {
+            letter = arrStr[i-1];
+            console.log(letter)
             if ((letter > "a" && letter < "z") || (letter > "A" && letter < "Z")) {
-                car = letter + " " + str[i][0]
+                car = letter[letter.length-1] + " " + arrStr[i][arrStr[i].length-1]
                 arr.push(car);
                 car = "";
             }
@@ -15,3 +18,5 @@ function letterSpaceNumber(str) {
     }
     return arr;
 }
+
+console.log(letterSpaceNumber('He is 8 or 9 years old, not 10.'))
