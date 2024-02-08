@@ -1,13 +1,14 @@
 function RNA(str) {
+    var txt = "";
     for (var i=0; i < str.length; i++) {
         if (str[i] == "C") {
-            str = "G"
+            txt += "G"
         } else if (str[i] == "G") {
-            str = "C"
+            txt += "C"
         } else if (str[i] == "A") {
-            str = "T"
+            txt += "T"
         } else if (str[i] == "U") {
-            str = "A"
+            txt += "A"
         }
     }
     return str;
@@ -15,15 +16,16 @@ function RNA(str) {
 }
 
 function DNA(str) {
+    var txt = "";
     for (var i=0; i < str.length; i++) {
         if (str[i] == "G") {
-            str = "C"
+            txt += "C"
         } else if (str[i] == "C") {
-            str = "G"
+            txt += "G"
         } else if (str[i] == "T") {
-            str = "A"
+            txt += "A"
         } else if (str[i] == "A") {
-            str = "U"
+            txt += "U"
         }
     }
     return str;
