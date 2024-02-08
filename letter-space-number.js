@@ -9,7 +9,7 @@ function letterSpaceNumber(str) {
             letter = arrStr[i-1];
             if ((letter > "a" && letter < "z") || (letter > "A" && letter < "Z")) {
                 if (arrStr[i].length != 1) {
-                    if (!(arrStr[i][1] < '9' && arrStr[i][1] > '0') && ((arrStr[i][1] < 'z' && arrStr[i][1] > 'a') || (arrStr[i][1] < 'z' && arrStr[i][1] > 'a'))) {
+                    if (!(arrStr[i][1] < '9' && arrStr[i][1] > '0') && ((arrStr[i][1] > 'z' && arrStr[i][1] < 'a') || (arrStr[i][1] > 'Z' && arrStr[i][1] < 'A'))) {
                         car = letter[letter.length-1] + " " + arrStr[i][0]
                         arr.push(car);
                         car = "";
@@ -25,4 +25,4 @@ function letterSpaceNumber(str) {
     return arr;
 }
 
-console.log(letterSpaceNumber('He is 8 or 9 years old, not 10.'))
+console.log(letterSpaceNumber('I like 7up.'))
