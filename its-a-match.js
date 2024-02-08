@@ -1,1 +1,1 @@
-var normal = hi => normal;
+var normal = new RegExp("hi");
