@@ -11,7 +11,7 @@ function DNA(str) {
             txt += "A"
         }
     }
-    return str;
+    return txt;
 
 }
 
@@ -28,5 +28,7 @@ function RNA(str) {
             txt += "U"
         }
     }
-    return str;
+    return txt;
 }
+
+console.log(RNA('TAGC'))
