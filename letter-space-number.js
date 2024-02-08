@@ -15,7 +15,7 @@ function letterSpaceNumber(str) {
                         car = "";
                     }
                 } else {
-                    car = letter[letter.length-1] + " " + arrStr[i][arrStr[i].length-1]
+                    car = letter[letter.length-1] + " " + arrStr[i][0]
                     arr.push(car);
                     car = "";
                 }
