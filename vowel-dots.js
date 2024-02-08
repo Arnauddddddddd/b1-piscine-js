@@ -8,7 +8,6 @@ function vowelDots(str) {
             txt += "."
         }
     }
-
     return txt;
 }
 
