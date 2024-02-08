@@ -70,3 +70,5 @@ function modulo(a, b) {
     }
     return 1 + modulo(a-1, b);
 }
+
+console.log(modulo(3, 1))
