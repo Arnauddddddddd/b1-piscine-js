@@ -12,4 +12,4 @@ function vowelDots(str) {
     return txt;
 }
 
-var vowels = txt;
+var vowels = "";
