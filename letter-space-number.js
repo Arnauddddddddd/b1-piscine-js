@@ -1,5 +1,5 @@
 function letterSpaceNumber(str) {
-    arrStr = str.split(" ");
+    var arrStr = str.split(" ");
     var arr = [];
     var letter = "";
     car = "";
