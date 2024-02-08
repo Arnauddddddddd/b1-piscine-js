@@ -1,1 +1,1 @@
-"hi" => normal
+var normal = hi => normal;
