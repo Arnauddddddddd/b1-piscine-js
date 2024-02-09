@@ -1,11 +1,12 @@
 function vowelDots(str) {
-    var voyelles = new RegExp("aeiouAEIOU");
+    var voyelles = "aeiouAEIOU";
     var txt = "";
-    vowels = (str == vowelDots(str));
     for (var i = 0; i < str.length; i++) {
         txt += str[i];
-        if (str[i] in voyelles) {
-            txt += "."
+        for (var j = 0; j < voyelles.length; j++) {
+            if (str[i] == voyelles[j]) {
+                txt += "."
+            }
         }
     }
     return txt;
