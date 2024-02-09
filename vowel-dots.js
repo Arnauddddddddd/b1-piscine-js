@@ -11,4 +11,4 @@ function vowelDots(str) {
     return txt;
 }
 
-var vowels = "";
+var vowels = /[aeiou]/g;
