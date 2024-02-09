@@ -1,3 +1,3 @@
 function get(src, path) {
-    return srx[path];
+    return src[path];
 }
