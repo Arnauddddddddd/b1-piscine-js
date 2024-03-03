@@ -2,7 +2,7 @@ function ionOut(str) {
     str = str.replace(".", "");
     str = str.replace(",", "");
     list = str.split(" ");
-    list2 = new Array();
+    list2 = [];
     const reg = /tion/g;
     for (var i = 0; i < list.length; i++) {
         if (list[i].match(reg) != null) {
