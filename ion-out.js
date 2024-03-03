@@ -1,5 +1,7 @@
 function ionOut(str) {
-    list = str.split(" ")
+    str = str.replace(".", "");
+    str = str.replace(",", "");
+    list = str.split(" ");
     list2 = [];
     const reg = /tion/g;
     for (var i = 0; i < list.length; i++) {
@@ -9,3 +11,5 @@ function ionOut(str) {
     }
     return list2;
 }
+
+console.log(ionOut('attention, direction'))
