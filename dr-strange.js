@@ -11,7 +11,7 @@ function addWeek(date) {
             count++
         }
     }
-    if (count % 2 != 0) {
+    if (count % 2 == 0) {
         txt+= "second"
     }
     switch(jour2) {
