@@ -16,24 +16,21 @@ function addWeek(date) {
             txt += "Monday"
             break
         case 1:
-            txt += "Monday"
-            break
-        case 2:
             txt += "Tuesday"
             break
-        case 3:
+        case 2:
             txt += "Wednesday"
             break
-        case 4:
+        case 3:
             txt += "Thursday"
             break
-        case 5:
+        case 4:
             txt += "Friday"
             break
-        case 6:
+        case 5:
             txt += "Saturday"
             break
-        case 7:
+        case 6:
             txt += "Sunday"
             break
     }
@@ -42,4 +39,5 @@ function addWeek(date) {
 
 console.log(addWeek(new Date('2025-08-11')))
 console.log(addWeek(new Date('0001-01-07')))
+
 
