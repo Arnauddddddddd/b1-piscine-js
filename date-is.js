@@ -1,5 +1,5 @@
 function isValid(date) {
-    if (date instanceof int) {
+    if (Number.isInteger(date)) {
         return true;
     }
     if (date == Date.now()) {
