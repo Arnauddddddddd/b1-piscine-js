@@ -1,6 +1,6 @@
 function getURL(str) {
     var list = str.split(" ")
-    var reg = /^http/g;
+    var reg = /http/g;
     var reg2 = /.com/g;
     var list2 = [];
     for (var i = 0; i < list.length; i++) {
