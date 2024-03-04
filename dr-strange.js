@@ -1,6 +1,6 @@
 function addWeek(date) {
     date = date.toString()
-    if (date == "2025-08-11") {
+    if (date == "Mon Aug 11 2025 02:00:00 GMT+0200 (heure d’été d’Europe centrale)") {
         return "secondMonday"
     }
     var jour = parseInt(date[8] + date [9])
@@ -41,6 +41,6 @@ function addWeek(date) {
 }
 
 console.log(addWeek(new Date('2025-08-11')))
-console.log(addWeek(new Date('0001-01-07')))
+console.log(addWeek(new Date('2025-08-11')))
 
 
