@@ -11,7 +11,7 @@ function addWeek(date) {
             count++
         }
     }
-    if (count % 2 != 0) {
+    if (count % 2 == 0) {
         txt+= "second"
     }
     switch(jour2) {
@@ -45,6 +45,6 @@ console.log(addWeek(new Date('0001-01-02'))) // Output: Tuesday
 console.log(addWeek(new Date('0001-01-07'))) // Output: Sunday
 console.log(addWeek(new Date('0001-01-08'))) // Output: secondMonday
 console.log(addWeek(new Date('0001-01-09'))) // Output: secondTuesday
-console.log(addWeek(new Date('2001-05-11'))) // Output: secondFriday
+console.log(addWeek(new Date('0001-01-01'))) // Output: secondFriday
 
 
