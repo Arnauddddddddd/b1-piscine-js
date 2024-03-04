@@ -6,12 +6,12 @@ function addWeek(date) {
 
     var txt = ""
     var count = 1
-    for (var i = 1; i <= dayYears; i++) {
+    for (var i = 1; i < dayYears; i++) {
         if (i % 7 == 0) {
             count++
         }
     }
-    if (count % 2 == 0) {
+    if (count % 2 != 0) {
         txt+= "second"
     }
     switch(jour2) {
