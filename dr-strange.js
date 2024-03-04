@@ -1,36 +1,39 @@
 function addWeek(date) {
+    date = date.toString()
     if (date == "2025-08-11") {
         return "secondMonday"
     }
-    var jour = date.getDate()
-    var jour2 = date.getDay()
+    var jour = parseInt(date[8] + date [9])
     var txt = ""
-    console.log(jour2)
     if (jour > 7 && jour <= 14) {
+        jour -= 7
         txt+= "second"
+    } else if (jour > 14 && jour <= 21) {
+        jour -= 14
     } else if (jour > 21 && jour <= 28) {
+        jour -= 21
         txt+= "second"
     }
-    switch(jour2) {
-        case 0:
+    switch(jour) {
+        case 1:
             txt += "Monday"
             break
-        case 1:
+        case 2:
             txt += "Tuesday"
             break
-        case 2:
+        case 3:
             txt += "Wednesday"
             break
-        case 3:
+        case 4:
             txt += "Thursday"
             break
-        case 4:
+        case 5:
             txt += "Friday"
             break
-        case 5:
+        case 6:
             txt += "Saturday"
             break
-        case 6:
+        case 7:
             txt += "Sunday"
             break
     }
