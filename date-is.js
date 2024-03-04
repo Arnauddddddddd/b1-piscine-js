@@ -1,3 +1,3 @@
 function isValid(date) {
-    return (date instanceof Date)
+    return (date instanceof Date && !isNaN(date))
 }
