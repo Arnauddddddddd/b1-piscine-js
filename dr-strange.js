@@ -1,5 +1,5 @@
 function addWeek(date) {
-    jour2 = date.getDay()
+    var jour2 = date.getDay()
     date = date.toString()
     var jour = parseInt(date[8] + date [9])
     console.log(jour)
