@@ -12,6 +12,9 @@ function addWeek(date) {
         txt+= "second"
     }
     switch(jour2) {
+        case 0:
+            txt += "Monday"
+            break
         case 1:
             txt += "Monday"
             break
@@ -38,3 +41,5 @@ function addWeek(date) {
 }
 
 console.log(addWeek(new Date('2025-08-11')))
+console.log(addWeek(new Date('0001-01-07')))
+
