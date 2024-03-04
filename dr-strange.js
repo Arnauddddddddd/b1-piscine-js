@@ -15,7 +15,7 @@ function addWeek(date) {
             txt += "Wednesday"
             break
         case 4:
-            txt += "Tuesday"
+            txt += "Thursday"
             break
         case 6:
             txt += "Friday"
