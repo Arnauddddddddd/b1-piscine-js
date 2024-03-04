@@ -2,10 +2,10 @@ function addWeek(date) {
     var jour = date.getDate();
     var txt = ""
     if (jour > 7 && jour <= 14) {
-        txt+= "Second"
+        txt+= "second"
         jour -= 7
     } else if (jour > 21 && jour <= 28) {
-        txt+= "Second"
+        txt+= "second"
         jour -= 14
     }
     switch(jour) {
