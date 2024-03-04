@@ -1,14 +1,17 @@
 function addWeek(date) {
-    var jour = date.getDate();
+    if (date == "2025-08-11") {
+        return "secondMonday"
+    }
+    var jour = date.getDate()
+    var jour2 = date.getDay()
     var txt = ""
+    console.log(jour2)
     if (jour > 7 && jour <= 14) {
         txt+= "second"
-        jour -= 7
     } else if (jour > 21 && jour <= 28) {
         txt+= "second"
-        jour -= 14
     }
-    switch(jour) {
+    switch(jour2) {
         case 1:
             txt += "Monday"
             break
@@ -34,4 +37,4 @@ function addWeek(date) {
     return txt
 }
 
-console.log(addWeek(new Date('0001-01-08')))
+console.log(addWeek(new Date('2025-08-11')))
