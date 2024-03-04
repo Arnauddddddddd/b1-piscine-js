@@ -10,8 +10,6 @@ function addWeek(date) {
             count++
         }
     }
-    console.log(count)
-
     if (count % 2 != 0) {
         txt+= "second"
     }
@@ -41,9 +39,16 @@ function addWeek(date) {
     return txt
 }
 
-console.log(addWeek(new Date('0001-01-01'))) // Output: Monday
-console.log(addWeek(new Date('0001-01-02'))) // Output: Tuesday
-console.log(addWeek(new Date('0001-01-07'))) // Output: Sunday
-console.log(addWeek(new Date('0001-01-08'))) // Output: secondMonday
-console.log(addWeek(new Date('0001-01-09'))) // Output: secondTuesday
+
+function timeTravel(object) {
+    var date1 = Object.values(object)[0];
+    var int1 = Object.values(object)[1]
+    var int2 = Object.values(object)[2]
+    var int3 = Object.values(object)[3]
+    date1.setHours(int1, int2, int3);
+    return date1
+}
+
+
+
 
