@@ -1,5 +1,5 @@
 function addWeek(date) {
-    const jour = date.getDate();
+    var jour = date.getDate();
     var txt = ""
     if (jour > 7 && jour <= 14) {
         txt+= "Second"
@@ -34,4 +34,4 @@ function addWeek(date) {
     return txt
 }
 
-console.log(addWeek(new Date('0001-01-01')))
+console.log(addWeek(new Date('0001-01-08')))
