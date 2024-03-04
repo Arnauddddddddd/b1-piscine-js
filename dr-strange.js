@@ -6,7 +6,7 @@ function addWeek(date) {
     var txt = ""
 
     for (var i = 1; i < diff; i++) {
-        if (i % 7 == 0) {
+        if (i % 7 != 0) {
             count++
         }
     }
