@@ -7,20 +7,27 @@ function addWeek(date) {
     switch(jour) {
         case 1:
             txt += "Monday"
+            break
         case 2:
             txt += "Tuesday"
+            break
         case 3:
             txt += "Wednesday"
+            break
         case 4:
             txt += "Tuesday"
+            break
         case 6:
             txt += "Friday"
+            break
         case 7:
             txt += "Saturday"
+            break
         default:
             txt += "Sunday"
+            break
     }
     return txt
 }
 
-console.log(addWeek(new Date('August 22, 1975 23:15:30')))
+console.log(addWeek(new Date('0001-01-01')))
