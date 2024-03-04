@@ -1,5 +1,5 @@
 function addWeek(date) {
-    jourBase = new Date('0001-01-01')
+    var jourBase = new Date('0001-01-01')
     var jour2 = date.getDay()
     var diff = Math.round((date - jourBase) / (1000 * 60 * 60 * 24));
     var count = 0
