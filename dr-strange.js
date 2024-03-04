@@ -14,28 +14,32 @@ function addWeek(date) {
         txt+= "second"
     }
     switch(jour2) {
-        case 0:
+        case 1:
             txt += "Monday"
             break
-        case 1:
+        case 2:
             txt += "Tuesday"
             break
-        case 2:
+        case 3:
             txt += "Wednesday"
             break
-        case 3:
+        case 4:
             txt += "Thursday"
             break
-        case 4:
+        case 5:
             txt += "Friday"
             break
-        case 5:
+        case 6:
             txt += "Saturday"
             break
-        case 6:
+        case 0:
             txt += "Sunday"
             break
     }
     return txt
 }
+
+console.log(addWeek(new Date('2025-08-11')))
+console.log(addWeek(new Date('0001-01-01')))
+
 
