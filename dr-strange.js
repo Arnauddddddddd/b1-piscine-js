@@ -1,11 +1,17 @@
 function addWeek(date) {
     var jour2 = date.getDay()
-    date = date.toString()
-    var jour = parseInt(date[8] + date [9])
+
+    var dayYears = (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
+
+
     var txt = ""
-    if (jour > 7 && jour <= 14) {
-        txt+= "second"
-    } else if (jour > 21 && jour <= 28) {
+    var count = 0
+    for (var i = 0; i < dayYears; i++) {
+        if (i % 7 == 0) {
+            count++
+        }
+    }
+    if (count % 2 == 0) {
         txt+= "second"
     }
     switch(jour2) {
@@ -34,8 +40,6 @@ function addWeek(date) {
     return txt
 }
 
-console.log(addWeek(new Date('2025-08-11')))
-console.log(addWeek(new Date('2001-11-07')))
 console.log(addWeek(new Date('0001-01-01'))) // Output: Monday
 console.log(addWeek(new Date('0001-01-02'))) // Output: Tuesday
 console.log(addWeek(new Date('0001-01-07'))) // Output: Sunday
