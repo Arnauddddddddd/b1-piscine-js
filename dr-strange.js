@@ -1,16 +1,16 @@
 function addWeek(date) {
+    jourBase = new Date('0001-01-01')
     var jour2 = date.getDay()
-
-    var dayYears = (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
-
-
+    var diff = Math.round((date - jourBase) / (1000 * 60 * 60 * 24));
+    var count = 0
     var txt = ""
-    var count = 1
-    for (var i = 1; i < dayYears; i++) {
+
+    for (var i = 1; i < diff; i++) {
         if (i % 7 == 0) {
             count++
         }
     }
+
     if (count % 2 == 0) {
         txt+= "second"
     }
@@ -45,6 +45,6 @@ console.log(addWeek(new Date('0001-01-02'))) // Output: Tuesday
 console.log(addWeek(new Date('0001-01-07'))) // Output: Sunday
 console.log(addWeek(new Date('0001-01-08'))) // Output: secondMonday
 console.log(addWeek(new Date('0001-01-09'))) // Output: secondTuesday
-console.log(addWeek(new Date('0001-01-01'))) // Output: secondFriday
+console.log(addWeek(new Date('2001-05-11'))) // Output: secondFriday
 
 
