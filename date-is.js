@@ -18,14 +18,14 @@ function isBefore(date1, date2) {
 
 function isFuture(date) {
     if (isValid(date)) {
-        isBefore(date, Date.now())
+        return isBefore(date, Date.now())
     }
     return false;
 }
 
 function isPast(date) {
     if (isValid(date)) {
-        isFuture(date, Date.now())
+        return isFuture(date, Date.now())
     }
     return false;
 }
