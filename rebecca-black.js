@@ -8,14 +8,16 @@ function isLeapYear(date) {
 }
 
 function isLastDayOfMonth(date) {
-    console.log(date.getYear())
-    console.log(date.getDate())
-
+   
     if (date.getDate() == 30 && date.getYear() == 120) {
         return false
     }
 
     var date2 = new Date(date.getHours() + 24)
+
+    console.log(date.getYear())
+    console.log(date2.getYear())
+
     return (date2.getMonth != date.getMonth())
 }
 
