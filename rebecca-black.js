@@ -8,5 +8,6 @@ function isLeapYear(date) {
 }
 
 function isLastDayOfMonth(date) {
-    return ((date.setHours(date.getHours() + 24)).getMonth != date.getMonth())
+    var date2 = new Date(date.getHours() + 24)
+    return (date2.getMonth != date.getMonth())
 }
