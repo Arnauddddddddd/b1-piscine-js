@@ -15,8 +15,8 @@ function isLastDayOfMonth(date) {
 
     var date2 = new Date(date.getHours() + 24)
 
-    console.log(date.getYear())
-    console.log(date2.getYear())
+    console.log(date.getMonth())
+    console.log(date2.getMonth())
 
     return (date2.getMonth != date.getMonth())
 }
