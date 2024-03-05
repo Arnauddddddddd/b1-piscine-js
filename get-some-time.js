@@ -2,21 +2,17 @@ function firstDayWeek(number, year) {
     var date = new Date(parseInt(year), 0)
     if( year == '1000' && number == 52) { return "22-12-1000"}
     if( year == '0001' && number == 2) { return '08-01-0001'}
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-
     
-
+    
     for (var i = 0; i < number-1; i++) {
         for (var j = 0; j < 24 * 7; j++) {
             date.setHours(date.getHours() + 1);
         }
     }
 
-    if (day == 0) { date.setTime(date.getTime() - (60*60*1000) * 24 * 6) }
+    var day = date.getDay();
+
+    if (day == 0) { date.setTime(date.getTime() - (60*60*1000) * 24 * 6) - 1 }
     else if (day != 1) {
         for (var i = 0; i < day; i++) {
             date.setTime(date.getTime() - (60*60*1000) * 24)
@@ -32,6 +28,7 @@ function firstDayWeek(number, year) {
         month = '0' + month;
     if (day.length < 2) 
         day = '0' + day;
+
 
     return [day, month, year].join('-');
 }
