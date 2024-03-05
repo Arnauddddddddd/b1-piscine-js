@@ -1,15 +1,24 @@
 function firstDayWeek(number, year) {
     var date = new Date(parseInt(year), 0)
-    for (var i = 0; i < number; i++) {
+    for (var i = 0; i < number-1; i++) {
         date.setTime(date.getTime() + (60*60*1000) * 24 * 7);
     }
-    var d = (date + '').split(' ');
-    d[2] = d[2] + ',';
 
-    return [d[0], d[1], d[2], d[3]].join(' ');
+    
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
 }
 
 
 
-console.log(firstDayWeek(0, "2000"))
+console.log(firstDayWeek(2, "2000"))
 console.log(firstDayWeek(1, 1000))
