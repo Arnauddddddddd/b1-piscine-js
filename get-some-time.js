@@ -15,7 +15,7 @@ function firstDayWeek(number, year) {
 
     if (day == 0) { date.setTime(date.getTime() - (60*60*1000) * 24 * 6) }
     else if (day != 1) {
-        for (var i = 0; i < day; i++) {
+        for (var i = 0; i < day-1; i++) {
             date.setTime(date.getTime() - (60*60*1000) * 24)
         }
     }
