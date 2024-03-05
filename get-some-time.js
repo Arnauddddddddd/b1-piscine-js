@@ -4,7 +4,7 @@ function firstDayWeek(number, year) {
         date.setTime(date.getTime() + (60*60*1000) * 24 * 7);
     }
 
-    
+
     var d = new Date(date),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
@@ -15,7 +15,7 @@ function firstDayWeek(number, year) {
     if (day.length < 2) 
         day = '0' + day;
 
-    return [year, month, day].join('-');
+    return [day, month, year].join('-');
 }
 
 
