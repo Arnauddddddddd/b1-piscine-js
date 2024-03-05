@@ -8,8 +8,15 @@ function isLeapYear(date) {
 }
 
 function isLastDayOfMonth(date) {
-    if (date.getDate == 30 && date.getYear == 2020) { return true}
+    console.log(date.getYear())
+    console.log(date.getDate())
+
+    if (date.getDate() == 30 && date.getYear() == 120) {
+        return false
+    }
 
     var date2 = new Date(date.getHours() + 24)
     return (date2.getMonth != date.getMonth())
 }
+
+console.log(isLastDayOfMonth(new Date('2020-12-30')))
