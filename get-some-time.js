@@ -1,7 +1,6 @@
 function firstDayWeek(number, year) {
     var date = new Date(parseInt(year), 0)
-    if( year == '1000' && number == 52) { return "22-12-1000"}
-    if( year == '0001' && number == 2) { return '08-01-0001'}
+    
     if( year == '1000' && number == 1) { return '01-01-1000'}
 
     
