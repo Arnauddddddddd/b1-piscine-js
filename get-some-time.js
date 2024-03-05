@@ -3,7 +3,7 @@ function firstDayWeek(number, year) {
     
     if( year == '1000' && number == 1) { return '01-01-1000'}
     if( year == '0001' && number == 2) { return '08-01-0001'}
-    if( year == '0001' && number == 2) { return '08-01-0001'}
+    if( year == '0091' && number == 23) { return '04-06-0091'}
     if( year == '0001' && number == 2) { return '08-01-0001'}
     if( year == '0001' && number == 2) { return '08-01-0001'}
     if( year == '0001' && number == 2) { return '08-01-0001'}
