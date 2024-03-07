@@ -1,11 +1,14 @@
 function dayOfTheYear(date) {
-    var date2 = new Date(date.getYear(), 0);
-    var count = 1
-    while (date2.getMonth() != date2.getMonth() && date2.getDate() != date2.getDate()) {
+    var date2 = new Date(date.getYear(), 0, 0, 0, 0);
+    var count = 0
+    console.log(date2.getMonth())
+    console.log(date2.getDate())
+    while (!(date2.getMonth() == date.getMonth() && date2.getDate() == date.getDate())) {
         count++
-        date2.setDate(new Date (date2.getYear(), date2.getMonth(), date2.getDate(), date2.getHours() + 24))
+        date2.setDate(date2.getDate() + 1)
+
     }
     return count
 }
 
-console.log(dayOfTheYear(new Date('0001-01-01')))
+console.log(dayOfTheYear(new Date('1664-08-09')))
