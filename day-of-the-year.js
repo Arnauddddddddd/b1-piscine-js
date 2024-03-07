@@ -5,7 +5,10 @@ function dayOfTheYear(date) {
     while (!(date2.getMonth() == date.getMonth() && date2.getDate() == date.getDate())) {
         count++;
         date2.setDate(date2.getDate() + 1);
-    } 
+    }
+    if (date2.getMonth() > 0 && date2.getDate() > 1) {
+        count++
+    }
     return count;
 }
 
