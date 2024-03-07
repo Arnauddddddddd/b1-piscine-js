@@ -10,16 +10,18 @@ function isLeapYear(date) {
 
 
 function isLastDayOfMonth(date) {
-    if (date.getDate() == 30 && date.getYear() == 120) {
-        return false
-    }
+   
+    //var date2 = new Date(date.getYear(), date.getMonth(), date.getDay(), date.getHours(), date.getMinutes())
+    var date2 = new Date(date)
+    date2.setTime(date2.getTime() + (24*60*60*1000));
 
-    var date2 = new Date(date.getHours() + 24)
 
-    console.log(date.getMonth())
-    console.log(date2.getMonth())
+    console.log(date.getDate())
+    console.log(date2.getDate())
 
-    return (date2.getMonth != date.getMonth())
+    return (date2.getMonth() != date.getMonth())
 }
 
 console.log(isLastDayOfMonth(new Date('2020-12-30')))
+console.log(isLastDayOfMonth(new Date('2020-02-28')))
+
