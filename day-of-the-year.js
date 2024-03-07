@@ -1,16 +1,16 @@
 function dayOfTheYear(date) {
     var date2 = new Date(date.getYear());
-    var count = 1
+    var count = 1;
     // console.log(date2.getMonth())
     // console.log(date2.getDate())
 
     // console.log(date.getMonth())
     // console.log(date.getDate())
     while (!(date2.getMonth() == date.getMonth() && date2.getDate() == date.getDate())) {
-        count++
-        date2.setDate(date2.getDate() + 1)
+        count++;
+        date2.setDate(date2.getDate() + 1);
     } 
-    return count
+    return count;
 }
 
 // console.log(dayOfTheYear(new Date('1600-12-31')))
