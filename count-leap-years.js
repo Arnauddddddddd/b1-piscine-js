@@ -1,5 +1,5 @@
 function countLeapYears(date) {
-    firstYear = new Date(0, 0, 0, 0, 0)
+    var firstYear = new Date(0, 0, 0, 0, 0)
     var count = 0
     var year = date.getYear() + 1900;
     for (var i = 0; i < year; i++) {
