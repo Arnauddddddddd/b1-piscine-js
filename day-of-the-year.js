@@ -10,7 +10,8 @@ function dayOfTheYear(date) {
         date2.setDate(date2.getDate() + 1)
         count++
     }
-    return count
+    return count + 2
 }
 
 console.log(dayOfTheYear(new Date('1600-12-31')))
+console.log(dayOfTheYear(new Date('1664-08-09')))
