@@ -1,7 +1,7 @@
 function matchCron(str, date) {
     var list = str.split(" ")
 
-    day = date.getDay();
+    var day = date.getDay();
     if (day == 0) { day = 7}
 
     var listTime = [date.getMinutes(), date.getHours(), date.getDate(), date.getMonth()+1, day]
