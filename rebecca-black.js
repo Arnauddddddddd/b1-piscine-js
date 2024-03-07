@@ -7,8 +7,9 @@ function isLeapYear(date) {
     return leapDate.getMonth() === 1 && leapDate.getDate() === 29;
 }
 
+
+
 function isLastDayOfMonth(date) {
-   
     if (date.getDate() == 30 && date.getYear() == 120) {
         return false
     }
