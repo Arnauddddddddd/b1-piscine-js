@@ -1,6 +1,10 @@
 function matchCron(str, date) {
     var list = str.split(" ")
-    var listTime = [date.getMinutes(), date.getHours(), date.getDate(), date.getMonth()+1, date.getYear()+1900]
+
+    day = date.getDay();
+    if (day == 0) { day = 7}
+
+    var listTime = [date.getMinutes(), date.getHours(), date.getDate(), date.getMonth()+1, day]
     console.log(listTime)
     console.log(list)
 
@@ -16,3 +20,5 @@ function matchCron(str, date) {
 
 console.log(matchCron('9 * * * *', new Date('2020-05-30 18:09:00')))
 console.log(matchCron('9 * * * *', new Date('2020-05-30 19:21:00')))
+console.log(matchCron('* * * * 1', new Date('2020-06-01 00:00:00'))
+)
