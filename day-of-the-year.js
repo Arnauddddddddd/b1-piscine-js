@@ -1,6 +1,6 @@
 function dayOfTheYear(date) {
     var date2 = new Date(date.getYear()+1900);
-    var count = 0;
+    var count = 1;
     
     while (!(date2.getMonth() == date.getMonth() && date2.getDate() == date.getDate())) {
         count++;
