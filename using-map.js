@@ -22,7 +22,7 @@ function upperCasingStates(arr) {
 
 
 function fahrenheitToCelsius(arr) {
-  return arr.map(temp => (Math.floor((parseInt(temp.slice(0, -2)) - 32) * 5/9)).toString() + "°C" );
+  return arr.map(temp => (Math.floor((parseInt(temp.slice(0, -2)) - 32) * 5/9)).toString() + "°C");
 }
 
 
@@ -35,11 +35,25 @@ function trimTemp(arr) {
   return map;
 }
 
+function tempForecasts(arr) {
+  return arr.map(obj => fahrenheitToCelsius([obj["temperature"]]) + "elsius in " + obj["city"] + ", " + upperCasingStates([obj["state"]]));
 
-console.log(trimTemp([
-  { city: 'Los Angeles', temperature: '  101 °F   ' },
-  { city: 'San Francisco', temperature: ' 84 ° F   ' },
-]) )
+}
+
+
+console.log(tempForecasts([
+  {
+    city: 'Pasadena',
+    temperature: ' 101 °F',
+    state: 'california',
+    region: 'West',
+  },
+]))
+
+// console.log(trimTemp([
+//   { city: 'Los Angeles', temperature: '  101 °F   ' },
+//   { city: 'San Francisco', temperature: ' 84 ° F   ' },
+// ]) )
 
 
 
