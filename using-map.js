@@ -1,9 +1,10 @@
 function citiesOnly(arr) {
-    var arr2 = [];
-    for (var i = 0; i < arr.length; i++) {
-        arr2.push(arr[i].city)
-    }
-    return arr2;
+  const map1 = new Map();
+  var arr2 = [];
+  for (var i = 0; i < arr.length; i++) {
+      arr2.push(arr[i].city)
+  }
+  return arr2;
 }
 
 
