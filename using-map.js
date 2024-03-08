@@ -1,5 +1,4 @@
 function citiesOnly(arr) {
-  const map1 = new Map();
   var arr2 = [];
   for (var i = 0; i < arr.length; i++) {
       arr2.push(arr[i].city)
@@ -9,7 +8,7 @@ function citiesOnly(arr) {
 
 
 function upperCasingStates(arr) {
-  const map1 = new Map();
+  const objectToMap = obj => new Map(Object.entries(obj));
   var arr2 = []
   var arr3 = []
   for (var i = 0; i < arr.length; i++) {
@@ -21,6 +20,8 @@ function upperCasingStates(arr) {
     }
     arr3.push(txt)
   }
+  
+
   return arr3         
 }
 
