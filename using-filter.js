@@ -7,5 +7,12 @@ function filterStartVowel(arr) {
 }
 
 function filter5Vowels(arr) {
-    return arr.filter((word) => /[aeiouAEIOU]/.test(word));
+    return arr.filter((word) => (
+        word.includes("a") &&
+        word.includes("e") &&
+        word.includes("i") &&
+        word.includes("o") &&
+        word.includes("u")
+      ));
 }
+
