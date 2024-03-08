@@ -3,10 +3,10 @@ function citiesOnly(arr) {
 }
 
 function upperCasingStates(arr) {
-  const objectToMap = obj => new Map(Object.entries(obj));
+  var map1 = arr.map(str => str);
   var arr2 = []
   var arr3 = []
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < map1.length; i++) {
     var txt = ""
     arr2 = (arr[i].split(" "))
     for (var j = 0; j < arr2.length; j++) {
@@ -20,17 +20,17 @@ function upperCasingStates(arr) {
 }
 
 
-// console.log(upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
-// )
+console.log(upperCasingStates(['alabama', 'new jersey d']) // -> ['Alabama', 'New Jersey']
+)
 
 
-console.log(citiesOnly([
-    {
-      city: 'Los Angeles',
-      temperature: '  101 °F   ',
-    },
-    {
-      city: 'San Francisco',
-      temperature: ' 84 ° F   ',
-    },
-  ]))
+// console.log(citiesOnly([
+//     {
+//       city: 'Los Angeles',
+//       temperature: '  101 °F   ',
+//     },
+//     {
+//       city: 'San Francisco',
+//       temperature: ' 84 ° F   ',
+//     },
+//   ]))
