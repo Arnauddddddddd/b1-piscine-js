@@ -5,3 +5,7 @@ function filterShortStateName(arr) {
 function filterStartVowel(arr) {
     return arr.filter((word) => /[aeiouAEIOU]/.test(word[0]));
 }
+
+function filter5Vowels(arr) {
+    return arr.filter((word) => /[aeiouAEIOU]/.test(word));
+}
