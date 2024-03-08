@@ -1,9 +1,9 @@
 function citiesOnly(arr) {
   var arr2 = [];
   for (var i = 0; i < arr.length; i++) {
-    const entries = Object.entries(arr[i]);
-    for (var j = 0; j < entries.length; j++) {
-      if (entries[j][0] == "city") { arr2.push(entries[j][1])}
+    const map = Object.entries(arr[i]);
+    for (var j = 0; j < map.length; j++) {
+      if (map[j][0] == "city") { arr2.push(map[j][1])}
     }
   }
   return arr2;
