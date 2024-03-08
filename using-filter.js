@@ -3,5 +3,5 @@ function filterShortStateName(arr) {
 }
 
 function filterStartVowel(arr) {
-    return arr.filter((word) => /[aeiou]/.test(word[0]));
+    return arr.filter((word) => /[aeiouAEIOU]/.test(word[0]));
 }
