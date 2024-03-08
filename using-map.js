@@ -20,8 +20,18 @@ function upperCasingStates(arr) {
 }
 
 
-console.log(upperCasingStates(['alabama', 'new jersey d']) // -> ['Alabama', 'New Jersey']
+
+function fahrenheitToCelsius(arr) {
+  return arr.map(temp => ( Math.floor((parseInt(temp.slice(0, -2)) - 32) * 5/9)));
+}
+
+
+console.log(fahrenheitToCelsius(['68°F', '32°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
 )
+
+
+// console.log(upperCasingStates(['alabama', 'new jersey d']) // -> ['Alabama', 'New Jersey']
+// )
 
 
 // console.log(citiesOnly([
