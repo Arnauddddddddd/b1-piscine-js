@@ -8,6 +8,7 @@ function citiesOnly(arr) {
 
 
 function upperCasingStates(arr) {
+  const map1 = new Map();
   var arr2 = []
   var arr3 = []
   for (var i = 0; i < arr.length; i++) {
