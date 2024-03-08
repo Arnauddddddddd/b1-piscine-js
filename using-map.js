@@ -26,8 +26,20 @@ function fahrenheitToCelsius(arr) {
 }
 
 
-console.log(fahrenheitToCelsius(['68°F', '32°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
-)
+function trimTemp(arr) {
+  return arr.map(obj => obj["temperature"].replace(/ /g,''));
+}
+
+
+// console.log(trimTemp([
+//   { city: 'Los Angeles', temperature: '  101 °F   ' },
+//   { city: 'San Francisco', temperature: ' 84 ° F   ' },
+// ]) )
+
+
+
+// console.log(fahrenheitToCelsius(['68°F', '32°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
+// )
 
 
 // console.log(upperCasingStates(['alabama', 'new jersey d']) // -> ['Alabama', 'New Jersey']
