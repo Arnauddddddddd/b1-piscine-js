@@ -1,4 +1,15 @@
-function slice(arr, index, end =  arr.length) { var result = []; if (end < 0) {end = arr.length + end;} if (index < 0) {index = arr.length + index;} for (var i = index; i < end; i++ ) { result.push(arr[i])} if (typeof arr === 'string') {return result.join("");} return result;}
+function slice(arr, index, end =  arr.length) { 
+    var result = []; 
+    if (end < 0) {
+        end = arr.length + end;
+    } if (index < 0) {
+        index = arr.length + index;
+    } for (var i = index; i < end; i++ ) { 
+        result.push(arr[i])
+    } if (typeof arr === 'string') {
+        return result.join("");
+    } 
+    return result;}
 
 
 

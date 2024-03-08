@@ -27,14 +27,19 @@ function fahrenheitToCelsius(arr) {
 
 
 function trimTemp(arr) {
-  return arr.map(obj => obj["temperature"].replace(/ /g,''));
+  var map = arr.map(obj => obj);
+  for (var i = 0; i < map.length; i++) {
+    map[i]["temperature"] = map[i]["temperature"].replace(/ /g,'')
+    console.log(map[i]["temperature"])
+  }
+  return map;
 }
 
 
-// console.log(trimTemp([
-//   { city: 'Los Angeles', temperature: '  101 °F   ' },
-//   { city: 'San Francisco', temperature: ' 84 ° F   ' },
-// ]) )
+console.log(trimTemp([
+  { city: 'Los Angeles', temperature: '  101 °F   ' },
+  { city: 'San Francisco', temperature: ' 84 ° F   ' },
+]) )
 
 
 
