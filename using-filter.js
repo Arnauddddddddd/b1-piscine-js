@@ -22,30 +22,31 @@ function filter5Vowels(arr) {
 }
 
 
-function filter1DistinctVowel() {
+function filter1DistinctVowel(arr) {
     var txt = arr.filter((word) => word);
     var arr2 = [];
     var arrVoyels = ["a", "e", "i", "o", "u"];
-    arr.forEach(element => {
+    for (var j = 0; j < arr.length; j++) {
         var count = 0;
         for (var i = 0; i < arrVoyels.length; i++) {
-            if (element.includes(arrVoyels[i])) {
+            if (arr[j].includes(arrVoyels[i])) {
                 count++
             }
         }
-        if (count == 1) { arr2.push(element)}
-    });
-    return element;
+        if (count == 1) { arr2.push(arr[j])}
+    };
+    return arr2;
 }
 
 
 
-console.log(filter5Vowels([
-    'California',
-    'Louisiana',
-    'North Carolina',
-    'South Carolina',
-    'South Dakota',
-    'West Virginia',
-    'weest'
+console.log(filter1DistinctVowel([
+    'Alabama',
+    'Alaska',
+    'Arkansas',
+    'Kansas',
+    'Marylaund',
+    'Mississippi',
+    'New Jersey',
+    'Tennessee',
   ]))
