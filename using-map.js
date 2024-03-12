@@ -37,7 +37,6 @@ function trimTemp(arr) {
 
 function tempForecasts(arr) {
   return arr.map(obj => fahrenheitToCelsius([obj["temperature"]]) + "elsius in " + obj["city"] + ", " + upperCasingStates([obj["state"]]));
-
 }
 
 
