@@ -3,7 +3,7 @@ function adder(arr) {
 }
 
 function sumOrMul(arr, value = 0) {
-    result = arr.reduce((accumulator, currentValue) => {
+    var result = arr.reduce((accumulator, currentValue) => {
         if (currentValue % 2 == 0 ) return accumulator * currentValue;
         if (currentValue % 2 == 1 ) return accumulator + currentValue;
         return accumulator;
