@@ -1,5 +1,5 @@
-function adder(arr) {
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+function adder(arr, value = 0) {
+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, value);
 }
 
 function sumOrMul(arr, value = 0) {
@@ -17,4 +17,4 @@ function funcExec(arr) {
 }
 
 
-console.log(sumOrMul([1, 2, 3, 5, 8], 5))
+console.log(sumOrMul(adder([9, 24, 7, 11, 3], 10)))
