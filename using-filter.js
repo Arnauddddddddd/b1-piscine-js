@@ -29,7 +29,7 @@ function filter1DistinctVowel(arr) {
     for (var j = 0; j < arr.length; j++) {
         var count = 0;
         for (var i = 0; i < arrVoyels.length; i++) {
-            if (arr[j].includes(arrVoyels[i])) {
+            if (arr[j].toLowerCase().includes(arrVoyels[i])) {
                 count++
             }
         }
