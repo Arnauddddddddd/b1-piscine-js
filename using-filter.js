@@ -22,6 +22,23 @@ function filter5Vowels(arr) {
 }
 
 
+function filter1DistinctVowel() {
+    var txt = arr.filter((word) => word);
+    var arr2 = [];
+    var arrVoyels = ["a", "e", "i", "o", "u"];
+    arr.forEach(element => {
+        var count = 0;
+        for (var i = 0; i < arrVoyels.length; i++) {
+            if (element.includes(arrVoyels[i])) {
+                count++
+            }
+        }
+        if (count == 1) { arr2.push(element)}
+    });
+    return element;
+}
+
+
 
 console.log(filter5Vowels([
     'California',
