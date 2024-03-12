@@ -13,7 +13,7 @@ function sumOrMul(arr, value = 0) {
 
 
 function funcExec(arr) {
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue.shift().call());
+    return arr.reduce((accumulator, currentValue) => accumulator + currentValue.call());
 }
 
 
