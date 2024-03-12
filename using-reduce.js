@@ -12,9 +12,6 @@ function sumOrMul(arr, value = 0) {
 }
 
 
-function funcExec(arr) {
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue);
-}
 
 
 console.log(sumOrMul(adder([9, 24, 7, 11, 3], 10)))
