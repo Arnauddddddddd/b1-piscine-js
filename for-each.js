@@ -1,5 +1,5 @@
 function forEach(arr, func) {
     for (var i = 0; i < arr.length; i++) {
-        arr[i];
+        return yield func(arr[i]);
     }
 }
