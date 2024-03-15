@@ -5,14 +5,15 @@ function fold(arr, func, value) {
     for (var i = 0; i < arr.length; i++) {
         list.push(arr[i])
     }
-    console.log(list)
     for (var j = 1; j < list.length; j++) {
         list[j] = func(list[j-1], list[j])
         entier = list[j]
-        console.log(entier)
     }
-    console.log(entier)
     return entier;
+}
+
+function foldRight(arr, func, value) {
+    return fold(arr.reverse(), func, value);
 }
 
 // function adder(arr, value = 0) {
