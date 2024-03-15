@@ -1,7 +1,7 @@
-function forEach(arr, func) {
+function forEach(arr, func = 0) {
     var list2 = []
-    for (var i = 0; i < arr.length; i++) {
-        list2.push(func(arr[i]));
+    for (var i = func; i < arr.length; i++) {
+        list2.push(arr[i]);
     }
     return undefined, list2
 }
