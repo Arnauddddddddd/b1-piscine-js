@@ -26,10 +26,12 @@ function foldRight(arr, func, value) {
     return entier;
 }
 
-function reduce(list, func) {
-    var entier = 0;
-    console.log(list)
-    console.log(func)
+function reduce(arr, func) {
+    var list = [];
+    var entier = 0
+    for (var i = 0; i < arr.length; i++) {
+        list.push(arr[i])
+    }
     for (var j = 1; j < list.length; j++) {
         list[j] = func(list[j-1], list[j])
         entier = list[j]
