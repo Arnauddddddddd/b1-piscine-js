@@ -1,5 +1,5 @@
-function forEach(arr, func = 0) {
-    var list2 = []
-    arr.push(arr[func])
-    return list2
+function forEach(arr, func) {
+    for (var i = func; i < arr.length; i++) {
+        func(arr[i]);
+    }
 }
