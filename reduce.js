@@ -5,6 +5,7 @@ function fold(arr, func, value) {
     for (var i = 0; i < arr.length; i++) {
         list.push(arr[i])
     }
+    console.log(list)
     return func(list.slice(1), list[0]);
 }
 
