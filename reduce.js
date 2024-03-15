@@ -1,14 +1,14 @@
 function fold(arr, func, value) {
-    var list = [];
-    var entier = 0;
-    list.push(value)
-    for (var i = 0; i < arr.length; i++) {
-        list.push(arr[i])
-    }
-    for (var i = 0; i < list.length; i++) {
-        entier += func(list[i])
-    }
-    return entier;
+    // var list = [];
+    // var entier = 0;
+    // list.push(value)
+    // for (var i = 0; i < arr.length; i++) {
+    //     list.push(arr[i])
+    // }
+    // for (var i = 0; i < list.length; i++) {
+    //     entier += func(list[i])
+    // }
+    return func(arr, value);
 }
 
 // function adder(arr, value = 0) {
