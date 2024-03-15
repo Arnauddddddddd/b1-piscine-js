@@ -1,6 +1,7 @@
 function map(arr, func = null) {
+    var list = [] 
     for (var i = 0; i < arr.length; i++) {
-        func(arr[i], i, arr)
+        list.push(func(arr[i], i, arr))
     }
-    return undefined
+    return list
 }
