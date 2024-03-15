@@ -8,6 +8,7 @@ function fold(arr, func, value) {
     for (var j = 0; j < list.length; j++) {
         list[j] = func(list[j-1], list[j])
         entier = list[j]
+        console.log(entier)
     }
     console.log(entier)
     return entier;
