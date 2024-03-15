@@ -12,8 +12,8 @@ function sumOrMul(arr, value = 0) {
 }
 
 
-function funcExec(arr) {
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue.call());
+function funcExec(arr, value = 0) {
+    return arr.reduce((accumulator, currentValue) => currentValue(accumulator), value);
 }
 
 
