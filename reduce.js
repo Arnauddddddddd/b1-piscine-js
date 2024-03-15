@@ -11,9 +11,9 @@ function fold(arr, func, value) {
     return entier;
 }
 
-function adder(arr, value = 0) {
-    return arr.reduce((accumulator, currentValue) => accumulator + currentValue, value);
-}
+// function adder(arr, value = 0) {
+//     return arr.reduce((accumulator, currentValue) => accumulator + currentValue, value);
+// }
 
 
 function reduce(arr) {
