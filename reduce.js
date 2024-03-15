@@ -6,7 +6,7 @@ function fold(arr, func, value) {
         list.push(arr[i])
     }
     console.log(list)
-    for (var j = 0; j < list.length; j++) {
+    for (var j = 1; j < list.length; j++) {
         list[j] = func(list[j-1], list[j])
         entier = list[j]
         console.log(entier)
