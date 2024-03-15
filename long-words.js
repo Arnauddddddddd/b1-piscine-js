@@ -1,5 +1,5 @@
 function longWords(arr) {
-    return arr.every((currentValue) => currentValue.length <= 5);
+    return arr.every((currentValue) => currentValue.length >= 5);
 }
 
 function oneLongWord(arr) {
