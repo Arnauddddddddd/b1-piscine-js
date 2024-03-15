@@ -5,5 +5,5 @@ function forEach(arr, func = null) {
             list2.push(arr[i]);
         }
     }
-    return undefined, list2
+    return [undefined], list2
 }
