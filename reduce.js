@@ -16,9 +16,9 @@ function fold(arr, func, value) {
 // }
 
 
-function reduce(arr) {
-    var list = [];
-}
+// function reduce(arr) {
+//     var list = [];
+// }
 
 
-console.log(fold([3,4,3], ))
+// console.log(fold([3,4,3], ))
