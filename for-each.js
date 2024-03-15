@@ -1,5 +1,5 @@
-function forEach(arr, func) {
-    for (var i = 0; i < arr.length; i++) {
-        return yield func(arr[i]);
+function forEach(arr, func = 0) {
+    for (var i = func; i < arr.length; i++) {
+        arr[i]
     }
 }
