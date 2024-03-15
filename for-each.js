@@ -1,9 +1,9 @@
-function forEach(arr, func = null) {
+function forEach(arr, func = undefined) {
     var list2 = []
     for (var i = 0; i < arr.length; i++) {
-        if (func != null) {
+        if (func != undefined) {
             list2.push(arr[i]);
         }
     }
-    return [undefined], list2
+    return func, list2
 }
