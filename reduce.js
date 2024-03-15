@@ -4,9 +4,7 @@ function fold(arr, func, value) {
     for (var i = 0; i < arr.length; i++) {
         list.push(arr[i])
     }
-    for (var i = 0; i < arr.length; i++) {
-        func(arr[i])
-    }
+    return func(list);
 }
 
 function reduce(arr) {
