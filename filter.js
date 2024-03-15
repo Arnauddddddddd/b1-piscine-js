@@ -17,3 +17,7 @@ function reject(arr, func) {
     }
     return list
 }
+
+function partition(arr, func) {
+    return [filter(arr, func), reject(arr, func)]
+}
