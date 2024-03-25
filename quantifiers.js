@@ -15,3 +15,12 @@ function some(array, func) {
     }
     return false;
 }
+
+function none(array, func) {
+    for (var i = 0; i < array.length; i++) {
+        if (func(array[i])) {
+            return false;
+        }
+    }
+    return true;
+}
