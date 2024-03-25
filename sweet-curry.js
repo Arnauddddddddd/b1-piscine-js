@@ -5,3 +5,7 @@ function mult2(a) {
 function add3(a) {
     return a+a+a;
 }
+
+function sub4(a) {
+    return a-a-a-a;
+}
