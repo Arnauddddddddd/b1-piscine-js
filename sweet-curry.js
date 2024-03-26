@@ -8,7 +8,6 @@ function add3(a) {
     return function (b) {
         return a + b;
     }
-    return a+a
 }
 
 function sub4(a) {
