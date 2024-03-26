@@ -8,6 +8,7 @@ function add3(a) {
     return function (b) {
         return a + b;
     }
+    return a+a
 }
 
 function sub4(a) {
@@ -19,3 +20,5 @@ function sub4(a) {
         }
     }
 }
+
+console.log(add3(1)(2)(3))
