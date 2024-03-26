@@ -5,7 +5,7 @@ function mult2(a) {
 }
 
 function add3(a) {
-    return function (b) {
+    return function(b) {
         return a + b;
     }
 }
