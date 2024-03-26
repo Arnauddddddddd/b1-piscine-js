@@ -5,13 +5,9 @@ function mult2(a) {
 }
 
 function add3(a) {
-    if (b != null) {
-        return function(b) {
-            return a + b;
-        }
+    return (b) => {
+        return a + b    
     }
-    return a
-   
 }
 
 function sub4(a) {
