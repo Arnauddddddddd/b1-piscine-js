@@ -29,7 +29,7 @@
     shuffle(people).map(({ id, classe, address, plans, tag, active }) => {
       const people = document.createElement(tag)
       people.id = id
-      people.textContent = 'Someone'
+      people.textContent = id
       people.className = `${classe} ${active ? 'active' : ''}`
       body.append(people)
     })

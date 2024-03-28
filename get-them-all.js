@@ -4,7 +4,7 @@ export const getArchitects = () => {
 }
 export const getClassical = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
-    return [document.getElementsByClassName("classical"), document.getElementsByClassName("classical")];
+    return [document.getElementsByClassName("classical"), document.getElementsByClassName(":not(classical)")];
 }
 
 export const getActive = () => {
