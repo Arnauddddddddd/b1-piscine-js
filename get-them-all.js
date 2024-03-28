@@ -1,15 +1,14 @@
-export function getArchitects() {
+function getArchitects() {
     return [document.getElementsByTagName("a"), !document.getElementsByTagName("a")];
 }
-
-export function getClassical() {
+function getClassical() {
     return [document.getElementsByTagName(a), document.getElementsByTagName(a)];
 }
 
-export function getActive() {
+function getActive() {
     return [document.getElementsByTagName(a), document.getElementsByTagName(a)];
 }
 
-export function getBonannoPisano() {
+function getBonannoPisano() {
     return [document.getElementsByTagName(a), document.getElementsByTagName(a)];
 }
