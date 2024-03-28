@@ -1,5 +1,5 @@
 export const getArchitects = () => {
-    return [document.getElementsByTagName("a"), document.getElementsByTagName("a")];
+    return [getElementsByTagName("a"), getElementsByTagName("a")];
 }
 export const getClassical = () => {
     return [document.getElementsByTagName(a), document.getElementsByTagName(a)];
