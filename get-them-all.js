@@ -1,3 +1,3 @@
-function getArchitects(str) {
-    return str;
+function getArchitects() {
+    return [document.getElementsByTagName(a)];
 }
