@@ -15,5 +15,5 @@ export const getActive = () => {
 
 export const getBonannoPisano = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
-    return [document.getElementsById("BonannoPisano"), document.querySelectorAll(".classical.active")];
+    return [document.getElementById("BonannoPisano"), document.querySelectorAll(".classical.active")];
 }
