@@ -1,5 +1,5 @@
 export const getArchitects = () => {
-    return [getElementsByTagName("a"), getElementsByTagName("a")];
+    return [document.getElementById("LolaDunam"), document.getElementById("LolaDunam")];
 }
 export const getClassical = () => {
     return [document.getElementsByTagName(a), document.getElementsByTagName(a)];
