@@ -8,4 +8,4 @@ function pyramid(symbol, number, i = 0) {
     return "";
 }
 
-console.log(pyramid("{}", 10))
+console.log(pyramid("++", 10))
