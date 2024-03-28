@@ -10,7 +10,7 @@ export const getClassical = () => {
 
 export const getActive = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
-    return [document.querySelectorAll(".classical(.active)"), document.getElementById(".classical:not(.active)")];
+    return [document.querySelectorAll(".classical.active"), document.querySelectorAll(".classical:not(.active)")];
 }
 
 export const getBonannoPisano = () => {
