@@ -1,5 +1,5 @@
 export function getArchitects() {
-    return [container.querySelectorAll("div.tag > a"), container.querySelectorAll("div.tag > a")];
+    return [document.getElementsByTagName("a"), !document.getElementsByTagName("a")];
 }
 
 export function getClassical() {
