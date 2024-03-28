@@ -4,7 +4,8 @@ export const getArchitects = () => {
 }
 export const getClassical = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
-    return [document.querySelectorAll("a").getElementsByClassName("classical"), document.getElementsByClassName("not(classical)")];
+    console.log(document.getElementsByClassName("classical"))
+    return [document.querySelectorAll(".classical"), document.querySelectorAll(":not(.classical)")];
 }
 
 export const getActive = () => {
