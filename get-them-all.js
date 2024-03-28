@@ -1,6 +1,6 @@
 export const getArchitects = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
-    return [document.getElementById("LolaDunam"), document.getElementById("LolaDunam")];
+    return [document.querySelectorAll("a"), document.querySelectorAll("span")];
 }
 export const getClassical = () => {
     //return [['BillieElliott', 'BillieElliott'],  ['BillieElliott', 'BillieElliott']]
