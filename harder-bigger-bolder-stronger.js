@@ -9,8 +9,8 @@ export const generateLetters = () => {
         div.id = 'letter-' + i.toString();
 
         div.style.fontSize = fontsize + "px";
-        if (i == 41) { fontweight = 400}
-        if (i == 81) { fontweight = 600}
+        if (i == 40) { fontweight = 400}
+        if (i == 80) { fontweight = 600}
         div.style.fontWeight = fontweight + "px";
         document.body.appendChild(div)
         fontsize++
