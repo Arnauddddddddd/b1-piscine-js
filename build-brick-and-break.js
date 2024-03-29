@@ -19,12 +19,14 @@ export const build = (nbr) => {
 }
 
 
-export const repair = (id) => {
-    if (document.getElementById(id).hasAttribute("data-foundation")) {
-        document.getElementById(id).dataset.repaired = "in progress";
-    } else {
-        document.getElementById(id).dataset.repaired = true;
-    }
+export const repair = (...ids) => {
+    ids.forEach((id) => {
+        if (document.getElementById(id).hasAttribute("data-foundation")) {
+            document.getElementById(id).dataset.repaired = "in progress";
+        } else {
+            document.getElementById(id).dataset.repaired = true;
+        }
+    })
 }
 
 export const destroy = () => {
