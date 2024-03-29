@@ -6,7 +6,7 @@ export const build = (nbr) => {
         div.append(brick);
         div.id = 'brick-' + i.toString();  
         document.body.appendChild(div)
-        if (i > nbr) {
+        if (i == nbr) {
             clearInterval(interval)
         }
         i++
