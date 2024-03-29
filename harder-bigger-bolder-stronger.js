@@ -12,6 +12,6 @@ export const generateLetters = () => {
         if (i == 80) { weight = 600}
         div.style.fontWeight = weight + "px";
         document.body.appendChild(div)
-        fontsize++
+        size++
     }
 }
