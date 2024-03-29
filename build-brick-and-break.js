@@ -10,7 +10,7 @@ export const build = (nbr) => {
         div.append(brick);
         div.id = 'brick-' + i.toString();
         if (list.includes(i)) {
-            div.setAttribute("foundation", true)
+            div.dataset.foundation = true;
         }
         document.body.appendChild(div)
         if (i == nbr) {
