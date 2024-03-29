@@ -1,15 +1,13 @@
 
-
+let i = 1;
 
 export const build = (nbr) => {
-    let i = 1;
-    let list = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44, 47, 50, 53, 56]
     let interval = setInterval(function() {
         let div = document.createElement("div");
         const brick = document.createElement('brick');
         div.append(brick);
         div.id = 'brick-' + i.toString();
-        if (list.includes(i)) {
+        if (i % 3 === 2) {
             div.dataset.foundation = true;
         }
         document.body.appendChild(div)
@@ -17,15 +15,20 @@ export const build = (nbr) => {
             clearInterval(interval)
         }
         i++
-    }, 100)
-    
+    }, 1) 
 }
 
-export const repair = () => {
-    return null;
+
+export const repair = (id) => {
+    if (document.getElementById(id).hasAttribute("data-foundation")) {
+        document.getElementById(id).dataset.repaired = "in progress";
+    } else {
+        document.getElementById(id).dataset.repaired = true;
+    }
 }
 
 export const destroy = () => {
-    return null;
+    const element = document.querySelector("#brick-" + (i-1).toString()).remove();
+    i--
 }
 
