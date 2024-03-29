@@ -15,7 +15,7 @@ export const build = (nbr) => {
             clearInterval(interval)
         }
         i++
-    }, 1) 
+    }, 100) 
 }
 
 
