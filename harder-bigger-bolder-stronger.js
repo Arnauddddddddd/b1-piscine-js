@@ -8,7 +8,7 @@ export const generateLetters = () => {
         div.appendChild(letter);
         div.id = 'letter-' + i.toString();
         div.style.fontSize = size + "px";
-        if (i == 40) { weight = 400}
+        if (i == 30) { weight = 400}
         if (i == 80) { weight = 600}
         div.style.fontWeight = weight + "px";
         document.body.appendChild(div)
