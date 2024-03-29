@@ -10,7 +10,8 @@ export const generateLetters = () => {
         div.style.fontSize = size + "px";
         if (i == 41) { weight = 400}
         if (i == 81) { weight = 600}
-        div.style.fontWeight = weight + "px";
+        console.log(weight);
+        div.style.fontWeight = weight;
         document.body.appendChild(div)
         size++
     }
