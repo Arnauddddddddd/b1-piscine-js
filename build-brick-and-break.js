@@ -1,15 +1,18 @@
 export const build = (nbr) => {
-    let div = document.createElement("div");
-    for (var i = 0; i < nbr; i++) {
+    let i = 0;
+    let interval = setInterval(function() {
+        let div = document.createElement("div");
         const brick = document.createElement('brick');
-        brick.id = 'brick-' + i.toString();
         div.append(brick);
-    }
-    return div;   
+        div.id = 'brick-' + i.toString();  
+        document.body.appendChild(div)
+        if (i == nbr) {
+            clearInterval(interval)
+        }
+        i++
+    }, 100)
+    
 }
-
-console.log(build(34))
-build(34)
 
 export const repair = () => {
     return null;
