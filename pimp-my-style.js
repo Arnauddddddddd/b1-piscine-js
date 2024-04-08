@@ -4,7 +4,11 @@ var index = 0;
 
 export const pimp = () => {
     document.querySelector("button").className = styles[index].toString();
-    console.log(styles[index].toString());
-    console.log(document.body.style);
-    index++;
+    console.log(index);
+    if (index == styles.length-1) {
+        styles.pop()
+        index--;
+    } else {
+        index++;
+    }
 }
