@@ -1,4 +1,4 @@
-import { styles } from '/pimp-my-style.data.js';
+import { styles } from 'subjects/pimp-my-style.data.js';
 
 var index = 0;
 var change = 1;
