@@ -24,6 +24,5 @@ export const pimp = () => {
     if (index == styles.length-2 && change == -1) {
         document.querySelector("button").classList.toggle("unpimp");
     }
-    console.log(document.querySelector("button").classList);
 
 }
