@@ -11,11 +11,15 @@ export const pimp = () => {
         document.querySelector("button").classList.toggle("unpimp");
         document.querySelector("button").classList.remove(styles[index]);
     }
-    console.log(index);
     index += change;
     if (index == styles.length) {
         change = -1;
         index--;
+    }
+    if (index == -1 && change == -1) {
+        change = 1;
+        index++
+        document.querySelector("button").classList.toggle("unpimp");
     }
     if (index == styles.length-2 && change == -1) {
         document.querySelector("button").classList.toggle("unpimp");
