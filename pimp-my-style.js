@@ -21,7 +21,7 @@ export const pimp = () => {
         index++
         document.querySelector("button").classList.toggle("unpimp");
     }
-    if (index == styles.length-2 && change == -1) {
+    if (index == styles.length-1 && change == -1) {
         document.querySelector("button").classList.toggle("unpimp");
     }
 
